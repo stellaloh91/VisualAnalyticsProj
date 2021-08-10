@@ -86,29 +86,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>A Visual Exploration of Covid-19 behaviours in Singapore</title>
+  <title>A Visual Exploration of Covid-19 behaviours in Singapore: Proposal</title>
 
-  <meta property="description" itemprop="description" content="Welcome to the website. This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London. Feel free to reach out with any comments!"/>
+  <meta property="description" itemprop="description" content="Initial project plans."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="A Visual Exploration of Covid-19 behaviours in Singapore"/>
+  <meta property="og:title" content="A Visual Exploration of Covid-19 behaviours in Singapore: Proposal"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Welcome to the website. This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London. Feel free to reach out with any comments!"/>
+  <meta property="og:description" content="Initial project plans."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="A Visual Exploration of Covid-19 behaviours in Singapore"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="A Visual Exploration of Covid-19 behaviours in Singapore"/>
-  <meta property="twitter:description" content="Welcome to the website. This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London. Feel free to reach out with any comments!"/>
+  <meta property="twitter:title" content="A Visual Exploration of Covid-19 behaviours in Singapore: Proposal"/>
+  <meta property="twitter:description" content="Initial project plans."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["A Visual Exploration of Covid-19 behaviours in Singapore"]},{"type":"character","attributes":{},"value":["Welcome to the website. This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London. Feel free to reach out with any comments!\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Proposal"]},{"type":"character","attributes":{},"value":["Initial project plans.\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth","self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2053,7 +2053,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"A Visual Exploration of Covid-19 behaviours in Singapore","description":"Welcome to the website. This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London. Feel free to reach out with any comments!","authors":[]}
+{"title":"Proposal","description":"Initial project plans.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2079,14 +2079,33 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>A Visual Exploration of Covid-19 behaviours in Singapore</h1>
+<h1>Proposal</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Welcome to the website. This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London. Feel free to reach out with any comments!</p></p>
+<p><p>Initial project plans.</p></p>
 </div>
 
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#motivation-objective">Motivation &amp; Objective</a></li>
+<li><a href="#data-source">Data Source</a></li>
+<li><a href="#methodology-approach">Methodology &amp; Approach</a>
+<ul>
+<li><a href="#bar-charts">Bar Charts</a></li>
+<li><a href="#line-charts">Line Charts</a></li>
+<li><a href="#chloropeth-map">Chloropeth Map</a></li>
+<li><a href="#latent-class-analysis-lca">Latent Class Analysis (LCA)</a></li>
+</ul></li>
+<li><a href="#timeline">Timeline</a></li>
+<li><a href="#packages">Packages</a></li>
+</ul>
+</nav>
+</div>
 <style>
 
 body{
@@ -2094,6 +2113,201 @@ body{
   font-family:helvetica;
 }
 </style>
+<h1 id="introduction">Introduction</h1>
+<p>With the onset of the Covid-19 pandemic since 2019, nations have been scrambling to gather as much data as possible on this novel virus. In a bid to contain the spread, nations have implemented various measures, with most of these approaches centered on the role of an individual to practice preventive behaviours. These measures range from being mandatory (requirement to wear masks once leaving the house) to those which are highly encouraged (proper handwashing). With the implementation of these approaches, daily behaviours as we know it have slowly evolved.</p>
+<p>Understanding how perceptions and behaviours have changed in critical in determining the success of Covid-19 measures. Afterall, it is not enforcement that will determine if measures introduced by the government succeed or fail, but the behaviour of the people. A common approach is to collect data from representative surveys, Most of these survey fieldwork and analysis are performed independently for various studies and tend to be on a smaller scale.</p>
+<p>Despite the effort and expense on such research initiatives, the real world practice of using these survey data tends to be confined to the particular study and bulk of the data collected is left untapped for insights. The charts presented in the analysis are typically confined to static charts which provide summarized information to the user. They tend to be highly aggregated with the granular details presented in supplementary charts. Moreover, these reports tend to use generic templates and ignore several best practices in statistical analysis and data visualization. This may be due to a lack of ability of non-analytics professionals to engage with data.</p>
+<h1 id="motivation-objective">Motivation &amp; Objective</h1>
+<p>This research and development is motivated by the lack of easy to use interactive tools for non-technical users to visualize the data collected and perform analysis on them. Hence this tools aims to fill this gap so as to allow these users such as a government Covid-19 taskforce practitioner to i) maximise the usage of the survey data collected, ii) be self-reliant in generating insights from this data. We have identified that one of the main difficulties these non-technical users face when attempting to generate such insights and visualizations independently is that they may not know how to update the codes to generate alternative views or to achieve visualizations of various levels of aggregation. The tool was thus aimed to support the following requirements:</p>
+<ol type="1">
+<li><p>Visualize data of different levels of aggregation, with minimal technical knowledge required</p></li>
+<li><p>Visualize trends and patterns among responses</p></li>
+<li><p>Ability to display detailed records on-demand</p></li>
+</ol>
+<h1 id="data-source">Data Source</h1>
+<p>The data was collected by <a href="https://github.com/YouGov-Data/covid-19-tracker">YouGov in partnership with the Institute of Global Health Innovation (IGHI) at Imperial College London to gather global insights on people’s behaviours in response to COVID-19</a>.</p>
+<h1 id="methodology-approach">Methodology &amp; Approach</h1>
+<p>We have brainstormed on the following visualizations to be included in the application:</p>
+<h2 id="bar-charts">Bar Charts</h2>
+<p>Bar charts present categorical data with rectangular bars with lengths proportional to the values that they represent. They are effective in helping the user compare individual values to one another. To help the user visualize the variability of data, we have also added an option to include 95% confidence error bars into the visualization.</p>
+<figure>
+<img src="Image/barerrorbar.JPG" alt="Example 1: Bar charts with error bars" /><figcaption aria-hidden="true">Example 1: Bar charts with error bars</figcaption>
+</figure>
+<h2 id="line-charts">Line Charts</h2>
+<p>Line charts display information as a series of data points connected by straight line segments. They are effective in their ability to show trends and patterns of change[5].</p>
+<figure>
+<img src="Image/linecharts.JPG" alt="Example 2: Line charts" /><figcaption aria-hidden="true">Example 2: Line charts</figcaption>
+</figure>
+<h2 id="chloropeth-map">Chloropeth Map</h2>
+<p>Albeit small in terms of geographical area, the vast demographic range of the population coupled with the pace of change in the age of the internet asserts that we pay attention to how the results vary from region to region within the country. A choropleth map provides us with an easy way to visualise such metrics. A good way to combat the issue of varying populations in different regions is to normalise the results and hence derive the “density” of the results in any particular area.</p>
+<figure>
+<img src="Image/map.JPG" alt="Example 3: Chloropeth Map" /><figcaption aria-hidden="true">Example 3: Chloropeth Map</figcaption>
+</figure>
+<h2 id="latent-class-analysis-lca">Latent Class Analysis (LCA)</h2>
+<p>LCA is an unsupervised clustering algorithm used for identifying class memberships based on categorical variables. A good LCA classification can answer a lot of questions within one visualisation and can lead to quicker and more robust decision making. We aim to classify the respondents based on their means and patterns of consuming media. Since the survey consists of multiple parameters, at times it be a challenge to identify the parameters that should be looked into while carrying out targeted media marketing. LCA, inherently unsupervised, helps solve this problem by creating patterns of association and calculation based on their maximum likelihoods.</p>
+<h1 id="timeline">Timeline</h1>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 21%" />
+<col style="width: 26%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Tasks Name</th>
+<th style="text-align: center;">Start Date (DD/MM/YY)</th>
+<th style="text-align: center;">End Date (DD/MM/YY)</th>
+<th style="text-align: center;">Assigned To</th>
+<th style="text-align: center;">% Completion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Formulate Project details</td>
+<td style="text-align: center;">05/06/21</td>
+<td style="text-align: center;">08/06/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">99.9%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Project consultation with Prof</td>
+<td style="text-align: center;">11/06/21</td>
+<td style="text-align: center;">11/06/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Refine project scope and ideas</td>
+<td style="text-align: center;">12/06/21</td>
+<td style="text-align: center;">20/06/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Complete project proposal and publish on Netlify page</td>
+<td style="text-align: center;">12/06/21</td>
+<td style="text-align: center;">20/06/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Data Preparation</td>
+<td style="text-align: center;">21/06/21</td>
+<td style="text-align: center;">30/06/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Draft Application Features</td>
+<td style="text-align: center;">18/07/21</td>
+<td style="text-align: center;">23/07/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Creation of application on R Shiny</td>
+<td style="text-align: center;">24/07/21</td>
+<td style="text-align: center;">31/07/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Draft Poster Design</td>
+<td style="text-align: center;">25/07/21</td>
+<td style="text-align: center;">31/07/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Application refinement</td>
+<td style="text-align: center;">01/08/2021</td>
+<td style="text-align: center;">14/08/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Draft final report, including user guide</td>
+<td style="text-align: center;">01/08/2021</td>
+<td style="text-align: center;">14/08/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Finalise artifact</td>
+<td style="text-align: center;">01/08/2021</td>
+<td style="text-align: center;">14/08/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Update Netlify</td>
+<td style="text-align: center;">09/08/2021</td>
+<td style="text-align: center;">14/08/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Submission of final application, user guide, project poster, research paper and artifacts</td>
+<td style="text-align: center;">15/08/21</td>
+<td style="text-align: center;">15/08/21</td>
+<td style="text-align: center;">All</td>
+<td style="text-align: center;">0%</td>
+</tr>
+</tbody>
+</table>
+<h1 id="packages">Packages</h1>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Package</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Shinydashboard</td>
+<td style="text-align: center;">Interactive web applications for data visualization</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Shiny</td>
+<td style="text-align: center;">Interactive web applications for data visualization</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Tidyverse</td>
+<td style="text-align: center;">Data manipulation</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Leaflet</td>
+<td style="text-align: center;">Create maps within the application</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Dplyr</td>
+<td style="text-align: center;">Data manipulation</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Sf</td>
+<td style="text-align: center;">Create maps within the application</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">ggplot2</td>
+<td style="text-align: center;">Plot visualizations and EDA</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Plotly</td>
+<td style="text-align: center;">Plot interactive visualizations</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Shinythemes</td>
+<td style="text-align: center;">Select themes for Shiny application</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">mclust</td>
+<td style="text-align: center;">Perform Latent Class Analysis</td>
+</tr>
+</tbody>
+</table>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

@@ -1,15 +1,22 @@
 ---
-title: "VisualAnalyticsProj"
+title: "A Visual Exploration of Covid-19 behaviours in Singapore"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Welcome to the website. This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London. Feel free to reach out with any comments!
 site: distill::distill_website
 ---
+<style>
+
+body{
+  background-color: #EBEDEF;
+  font-family:helvetica;
+}
+</style>
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
+knitr::opts_chunk$set(fig.retina = 3,
+                      echo = FALSE,
+                      eval = TRUE,
+                      message = FALSE,
+                      warning = FALSE)
 ```
 

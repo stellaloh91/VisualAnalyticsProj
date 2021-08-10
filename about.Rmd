@@ -1,10 +1,32 @@
 ---
-title: "About this site"
-description: |
-  Some additional details about the website
+title: "ISSS608 G1 Team 7"
+image: Image/smu_logo.jpg
+links:
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/stella-loh-308b72129/"
+  - label: GitHub
+    url: "https://github.com/stellaloh91"
+  - label: Email
+    url: "mailto:team7visual@gmail.com"
+output:
+  postcards::jolla
 ---
 
+<style>
+
+body{
+  background-color: #EBEDEF;
+  font-family:helvetica;
+}
+</style>
+
+This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London.
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(fig.retina = 3,
+                      echo = FALSE,
+                      eval = TRUE,
+                      message = FALSE,
+                      warning = FALSE)
 ```
 

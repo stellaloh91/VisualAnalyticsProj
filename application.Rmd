@@ -1,0 +1,27 @@
+---
+title: "Application & User Guide"
+description: |
+  Proposed application and guide on how to use application.
+output: distill::distill_article
+---
+<style>
+
+body{
+  background-color: #EBEDEF;
+  font-family:helvetica;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.retina = 3,
+                      echo = FALSE,
+                      eval = TRUE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+**Our Application can be found here:** [Application](www.rstudio.com)<br>
+**Our Application's User Guide can be found here:** [User Guide](www.rstudio.com)
+
+
+

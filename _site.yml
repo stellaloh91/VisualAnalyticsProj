@@ -1,9 +1,18 @@
-name: "VisualAnalyticsProj"
-title: "VisualAnalyticsProj"
+name: "A Visual Exploration of Covid-19 behaviours in Singapore"
+title: "A Visual Exploration of Covid-19 behaviours in Singapore"
 description: |
-  VisualAnalyticsProj
+  This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London.
 output_dir: "_site"
 navbar:
+  left:
+    - text: "Proposal"
+      href: proposal.html
+    - text: "Poster"
+      href: poster.html
+    - text: "Application & User Guide"
+      href: application.html
+    - text: "Research Paper"
+      href: paper.html
   right:
     - text: "Home"
       href: index.html
