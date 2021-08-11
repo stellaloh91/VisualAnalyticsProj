@@ -108,7 +108,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Proposal"]},{"type":"character","attributes":{},"value":["Initial project plans.\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth","self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Proposal"]},{"type":"character","attributes":{},"value":["Initial project plans.\n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_float","toc_depth","self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2128,35 +2128,38 @@ body{
 <p>The data was collected by <a href="https://github.com/YouGov-Data/covid-19-tracker">YouGov in partnership with the Institute of Global Health Innovation (IGHI) at Imperial College London to gather global insights on people’s behaviours in response to COVID-19</a>.</p>
 <h1 id="methodology-approach">Methodology &amp; Approach</h1>
 <p>We have brainstormed on the following visualizations to be included in the application:</p>
-<h2 id="bar-charts">Bar Charts</h2>
+<h3 id="bar-charts">Bar Charts</h3>
 <p>Bar charts present categorical data with rectangular bars with lengths proportional to the values that they represent. They are effective in helping the user compare individual values to one another. To help the user visualize the variability of data, we have also added an option to include 95% confidence error bars into the visualization.</p>
 <figure>
-<img src="Image/barerrorbar.JPG" alt="Example 1: Bar charts with error bars" /><figcaption aria-hidden="true">Example 1: Bar charts with error bars</figcaption>
+<img src="Image/barerrorbar.JPG" alt="Example 1: Example of bar charts with error bars" /><figcaption aria-hidden="true">Example 1: Example of bar charts with error bars</figcaption>
 </figure>
-<h2 id="line-charts">Line Charts</h2>
-<p>Line charts display information as a series of data points connected by straight line segments. They are effective in their ability to show trends and patterns of change[5].</p>
+<h3 id="line-charts">Line Charts</h3>
+<p>Line charts display information as a series of data points connected by straight line segments. They are effective in their ability to show trends and patterns of change.</p>
 <figure>
-<img src="Image/linecharts.JPG" alt="Example 2: Line charts" /><figcaption aria-hidden="true">Example 2: Line charts</figcaption>
+<img src="Image/linecharts.JPG" alt="Example 2: Example of line charts" /><figcaption aria-hidden="true">Example 2: Example of line charts</figcaption>
 </figure>
-<h2 id="chloropeth-map">Chloropeth Map</h2>
-<p>Albeit small in terms of geographical area, the vast demographic range of the population coupled with the pace of change in the age of the internet asserts that we pay attention to how the results vary from region to region within the country. A choropleth map provides us with an easy way to visualise such metrics. A good way to combat the issue of varying populations in different regions is to normalise the results and hence derive the “density” of the results in any particular area.</p>
+<h3 id="chloropeth-map">Chloropeth Map</h3>
+<p>We are provided with the location of respondents by region. With this information, we can visualize how the responses vary by regions within Singapore, using a choropleth map.</p>
 <figure>
-<img src="Image/map.JPG" alt="Example 3: Chloropeth Map" /><figcaption aria-hidden="true">Example 3: Chloropeth Map</figcaption>
+<img src="Image/map.JPG" alt="Example 3: Example of choropleth map" /><figcaption aria-hidden="true">Example 3: Example of choropleth map</figcaption>
 </figure>
-<h2 id="latent-class-analysis-lca">Latent Class Analysis (LCA)</h2>
-<p>LCA is an unsupervised clustering algorithm used for identifying class memberships based on categorical variables. A good LCA classification can answer a lot of questions within one visualisation and can lead to quicker and more robust decision making. We aim to classify the respondents based on their means and patterns of consuming media. Since the survey consists of multiple parameters, at times it be a challenge to identify the parameters that should be looked into while carrying out targeted media marketing. LCA, inherently unsupervised, helps solve this problem by creating patterns of association and calculation based on their maximum likelihoods.</p>
+<h3 id="latent-class-analysis-lca">Latent Class Analysis (LCA)</h3>
+<p>Latent Class Analysis (LCA) is a statistical method for identifying unmeasured class membership among subjects using categorical and/or continuous observed variables. Segmenting the population by the identified variables can allow end users to better understand the respondents and direct targeted initiatives at each segment to influence their behaviours. As there are many variables in the dataset, we have identified key variables to segment the population on.</p>
+<figure>
+<img src="Image/LCA.JPG" alt="Example 4: Example of Latent Class Analysis visualization" /><figcaption aria-hidden="true">Example 4: Example of Latent Class Analysis visualization</figcaption>
+</figure>
 <h1 id="timeline">Timeline</h1>
-<table>
+<table style="width:100%;">
 <colgroup>
-<col style="width: 15%" />
-<col style="width: 21%" />
-<col style="width: 26%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
+<col style="width: 23%" />
+<col style="width: 19%" />
+<col style="width: 23%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Tasks Name</th>
+<th style="text-align: left;">Tasks Name</th>
 <th style="text-align: center;">Start Date (DD/MM/YY)</th>
 <th style="text-align: center;">End Date (DD/MM/YY)</th>
 <th style="text-align: center;">Assigned To</th>
@@ -2165,95 +2168,95 @@ body{
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Formulate Project details</td>
+<td style="text-align: left;">Formulate Project details</td>
 <td style="text-align: center;">05/06/21</td>
 <td style="text-align: center;">08/06/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">99.9%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Project consultation with Prof</td>
+<td style="text-align: left;">Project consultation with Prof</td>
 <td style="text-align: center;">11/06/21</td>
 <td style="text-align: center;">11/06/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Refine project scope and ideas</td>
+<td style="text-align: left;">Refine project scope and ideas</td>
 <td style="text-align: center;">12/06/21</td>
 <td style="text-align: center;">20/06/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Complete project proposal and publish on Netlify page</td>
+<td style="text-align: left;">Complete project proposal and publish on Netlify page</td>
 <td style="text-align: center;">12/06/21</td>
 <td style="text-align: center;">20/06/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Data Preparation</td>
+<td style="text-align: left;">Data Preparation</td>
 <td style="text-align: center;">21/06/21</td>
 <td style="text-align: center;">30/06/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Draft Application Features</td>
+<td style="text-align: left;">Draft Application Features</td>
 <td style="text-align: center;">18/07/21</td>
 <td style="text-align: center;">23/07/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Creation of application on R Shiny</td>
+<td style="text-align: left;">Creation of application on R Shiny</td>
 <td style="text-align: center;">24/07/21</td>
 <td style="text-align: center;">31/07/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Draft Poster Design</td>
+<td style="text-align: left;">Draft Poster Design</td>
 <td style="text-align: center;">25/07/21</td>
 <td style="text-align: center;">31/07/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Application refinement</td>
+<td style="text-align: left;">Application refinement</td>
 <td style="text-align: center;">01/08/2021</td>
 <td style="text-align: center;">14/08/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Draft final report, including user guide</td>
+<td style="text-align: left;">Draft final report, including user guide</td>
 <td style="text-align: center;">01/08/2021</td>
 <td style="text-align: center;">14/08/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Finalise artifact</td>
+<td style="text-align: left;">Finalise artifact</td>
 <td style="text-align: center;">01/08/2021</td>
 <td style="text-align: center;">14/08/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Update Netlify</td>
+<td style="text-align: left;">Update Netlify</td>
 <td style="text-align: center;">09/08/2021</td>
 <td style="text-align: center;">14/08/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Submission of final application, user guide, project poster, research paper and artifacts</td>
+<td style="text-align: left;">Submission of final application, user guide, project poster, research paper and artifacts</td>
 <td style="text-align: center;">15/08/21</td>
 <td style="text-align: center;">15/08/21</td>
 <td style="text-align: center;">All</td>
-<td style="text-align: center;">0%</td>
+<td style="text-align: center;">100%</td>
 </tr>
 </tbody>
 </table>
@@ -2261,50 +2264,50 @@ body{
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Package</th>
-<th style="text-align: center;">Description</th>
+<th style="text-align: left;">Package</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Shinydashboard</td>
-<td style="text-align: center;">Interactive web applications for data visualization</td>
+<td style="text-align: left;">Shinydashboard</td>
+<td style="text-align: left;">Interactive web applications for data visualization</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Shiny</td>
-<td style="text-align: center;">Interactive web applications for data visualization</td>
+<td style="text-align: left;">Shiny</td>
+<td style="text-align: left;">Interactive web applications for data visualization</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Tidyverse</td>
-<td style="text-align: center;">Data manipulation</td>
+<td style="text-align: left;">Tidyverse</td>
+<td style="text-align: left;">Data manipulation</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Leaflet</td>
-<td style="text-align: center;">Create maps within the application</td>
+<td style="text-align: left;">Leaflet</td>
+<td style="text-align: left;">Create maps within the application</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Dplyr</td>
-<td style="text-align: center;">Data manipulation</td>
+<td style="text-align: left;">Dplyr</td>
+<td style="text-align: left;">Data manipulation</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Sf</td>
-<td style="text-align: center;">Create maps within the application</td>
+<td style="text-align: left;">Sf</td>
+<td style="text-align: left;">Create maps within the application</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">ggplot2</td>
-<td style="text-align: center;">Plot visualizations and EDA</td>
+<td style="text-align: left;">ggplot2</td>
+<td style="text-align: left;">Plot visualizations and EDA</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Plotly</td>
-<td style="text-align: center;">Plot interactive visualizations</td>
+<td style="text-align: left;">Plotly</td>
+<td style="text-align: left;">Plot interactive visualizations</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Shinythemes</td>
-<td style="text-align: center;">Select themes for Shiny application</td>
+<td style="text-align: left;">Shinythemes</td>
+<td style="text-align: left;">Select themes for Shiny application</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">mclust</td>
-<td style="text-align: center;">Perform Latent Class Analysis</td>
+<td style="text-align: left;">mclust</td>
+<td style="text-align: left;">Perform Latent Class Analysis</td>
 </tr>
 </tbody>
 </table>

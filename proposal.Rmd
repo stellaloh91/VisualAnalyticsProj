@@ -6,7 +6,7 @@ output:
   distill::distill_article:
     toc: true
     toc_float: true
-    toc_depth: 2
+    toc_depth: 3
     self_contained: false
 ---
 <style>
@@ -54,52 +54,54 @@ The data was collected by [YouGov in partnership with the Institute of Global He
 
 We have brainstormed on the following visualizations to be included in the application:
 
-## Bar Charts
+### Bar Charts
 
 Bar charts present categorical data with rectangular bars with lengths proportional to the values that they represent. They are effective in helping the user compare individual values to one another. To help the user visualize the variability of data, we have also added an option to include 95% confidence error bars into the visualization.
 
-![Example 1: Bar charts with error bars](Image/barerrorbar.JPG)
+![Example 1: Example of bar charts with error bars](Image/barerrorbar.JPG)
 
-## Line Charts
+### Line Charts
 
-Line charts display information as a series of data points connected by straight line segments. They are effective in their ability to show trends and patterns of change[5]. 
+Line charts display information as a series of data points connected by straight line segments. They are effective in their ability to show trends and patterns of change. 
 
-![Example 2: Line charts](Image/linecharts.JPG)
+![Example 2: Example of line charts](Image/linecharts.JPG)
 
-## Chloropeth Map
+### Chloropeth Map
 
-Albeit small in terms of geographical area, the vast demographic range of the population coupled with the pace of change in the age of the internet asserts that we pay attention to how the results vary from region to region within the country. A choropleth map provides us with an easy way to visualise such metrics. A good way to combat the issue of varying populations in different regions is to normalise the results and hence derive the “density” of the results in any particular area.
+We are provided with the location of respondents by region. With this information, we can visualize how the responses vary by regions within Singapore, using a choropleth map.
 
-![Example 3: Chloropeth Map](Image/map.JPG)
+![Example 3: Example of choropleth map](Image/map.JPG)
 
-## Latent Class Analysis (LCA)
+### Latent Class Analysis (LCA)
 
-LCA is an unsupervised clustering algorithm used for identifying class memberships based on categorical variables. A good LCA classification can answer a lot of questions within one visualisation and can lead to quicker and more robust decision making. We aim to classify the respondents based on their means and patterns of consuming media. Since the survey consists of multiple parameters, at times it be a challenge to identify the parameters that should be looked into while carrying out targeted media marketing. LCA, inherently unsupervised, helps solve this problem by creating patterns of association and calculation based on their maximum likelihoods.
+Latent Class Analysis (LCA) is a statistical method for identifying unmeasured class membership among subjects using categorical and/or continuous observed variables. Segmenting the population by the identified variables can allow end users to better understand the respondents and direct targeted initiatives at each segment to influence their behaviours. As there are many variables in the dataset, we have identified key variables to segment the population on.
+
+![Example 4: Example of Latent Class Analysis visualization](Image/LCA.JPG)
 
 
 # Timeline 
 
 Tasks Name | Start Date (DD/MM/YY) | End Date (DD/MM/YY) | Assigned To | % Completion 
- :----:|:------:|:--------:|:-----:|:-----:|
-Formulate Project details | 05/06/21 | 08/06/21 | All | 99.9% 
-Project consultation with Prof | 11/06/21 | 11/06/21 | All | 0%
-Refine project scope and ideas | 12/06/21 | 20/06/21 | All | 0% 
-Complete project proposal and publish on Netlify page | 12/06/21 | 20/06/21 | All | 0% 
-Data Preparation | 21/06/21 | 30/06/21 |All | 0% 
-Draft Application Features | 18/07/21 | 23/07/21 | All | 0%
-Creation of application on R Shiny | 24/07/21 | 31/07/21 | All | 0% 
-Draft Poster Design | 25/07/21 | 31/07/21 | All | 0%
-Application refinement | 01/08/2021 | 14/08/21 | All | 0% 
-Draft final report, including user guide | 01/08/2021 | 14/08/21 | All | 0% 
-Finalise artifact | 01/08/2021 | 14/08/21 | All | 0% 
-Update Netlify | 09/08/2021 | 14/08/21 | All | 0% 
-Submission of final application, user guide, project poster, research paper and artifacts | 15/08/21 | 15/08/21 | All | 0% 
+ :---------|:------:|:--------:|:-----:|:-----:|
+Formulate Project details | 05/06/21 | 08/06/21 | All | 100% 
+Project consultation with Prof | 11/06/21 | 11/06/21 | All | 100% 
+Refine project scope and ideas | 12/06/21 | 20/06/21 | All | 100%  
+Complete project proposal and publish on Netlify page | 12/06/21 | 20/06/21 | All | 100%  
+Data Preparation | 21/06/21 | 30/06/21 |All | 100% 
+Draft Application Features | 18/07/21 | 23/07/21 | All | 100% 
+Creation of application on R Shiny | 24/07/21 | 31/07/21 | All | 100% 
+Draft Poster Design | 25/07/21 | 31/07/21 | All | 100% 
+Application refinement | 01/08/2021 | 14/08/21 | All | 100%  
+Draft final report, including user guide | 01/08/2021 | 14/08/21 | All | 100% 
+Finalise artifact | 01/08/2021 | 14/08/21 | All | 100% 
+Update Netlify | 09/08/2021 | 14/08/21 | All | 100%  
+Submission of final application, user guide, project poster, research paper and artifacts | 15/08/21 | 15/08/21 | All | 100% 
 
 
 # Packages 
 
 Package | Description |
- :----:|:------:|
+ :------|:------|
 Shinydashboard | Interactive web applications for data visualization
 Shiny | Interactive web applications for data visualization
 Tidyverse | Data manipulation
