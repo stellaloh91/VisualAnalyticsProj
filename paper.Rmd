@@ -20,7 +20,7 @@ knitr::opts_chunk$set(fig.retina = 3,
                       warning = FALSE)
 ```
 
-Click here to see our Practice Research Paper: [Research Paper](www.rstudio.com)
+Click here to see our Practice Research Paper: [Research Paper](VAResearchPaper/VAResearchPaper.pdf)
 
 
 

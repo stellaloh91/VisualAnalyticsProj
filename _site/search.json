@@ -13,7 +13,7 @@
       "description": "Proposed application and guide on how to use application.\n",
       "author": [],
       "contents": "\r\n\r\n\r\nbody{\r\n  background-color: #EBEDEF;\r\n  font-family:helvetica;\r\n}\r\nOur Application can be found here: ApplicationOur Application’s User Guide can be found here: User Guide\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-08-11T02:14:33+08:00"
+      "last_modified": "2021-08-14T00:23:51+08:00"
     },
     {
       "path": "index.html",
@@ -29,7 +29,7 @@
       "description": "Paper detailing analysis and findings.\n",
       "author": [],
       "contents": "\r\n\r\n\r\nbody{\r\n  background-color: #EBEDEF;\r\n  font-family:helvetica;\r\n}\r\nClick here to see our Practice Research Paper: Research Paper\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-08-11T02:14:52+08:00"
+      "last_modified": "2021-08-14T00:26:46+08:00"
     },
     {
       "path": "proposal.html",
