@@ -39,6 +39,7 @@ summary(cars)
 
 ### Bar Chart
 ### Line Chart
+
 ### Choropleth Map
 
 ### Parallel Sets
