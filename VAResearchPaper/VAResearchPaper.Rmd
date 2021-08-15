@@ -137,13 +137,34 @@ The line chart allows users to hover over each line and observe the proportion o
 
 From Figure XX below, we observe that this survey question was not included in the surveys until Dec'2020. Initially, about 27% of the respondents has moderate to high trust (61%) in the vaccine and this reached a high of 77% in Jul'2021. We observed that most of the respondents have a moderate confidence in the vaccine, compared to 16% who believed strongly. 
 
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=\linewidth]{Image/TrustVaccine.JPG}
+  \caption{Line Chart on Respondents' Trust in Vaccine across time}
+    \label{fig:TrustVaccine}
+\end{figure}
+
 From Figure XX below, we also observe that vaccinations started becoming available to the population starting from [Feb'2021](https://www.gov.sg/article/what-you-should-know-about-the-covid-19-vaccine) and up to 55% of respondents have received 2 doses of vaccine as at Jul'2021, and 29% have received 1 dose. This is in line with the [country vaccination rates](https://www.straitstimes.com/singapore/politics/54-in-spore-have-received-2-doses-of-covid-19-mrna-vaccine-vaccination-rate-up-1). Proportion of respondents who have not started vaccination are also showing a steep decline since Mar'2021.
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=\linewidth]{Image/NumberDoses.JPG}
+  \caption{Line Chart on Number of Vaccine Doses Taken by Respondents across time}
+    \label{fig:NumberDoses}
+\end{figure}
 
 Another interesting observation noted was the preference for Pfizer vaccines initially in Mar'2021. However, this confidence soon started declining and in Jul'2021, there does not seem to be a significant difference in confidence among the vaccines. The decline may have coincided with [reports of a man's death after taking the said vaccine](https://www.straitstimes.com/singapore/health/man-who-died-a-day-after-first-covid-19-jab-suffered-from-heart-attack-death-not).
 
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=\linewidth]{Image/VaccMostTrusted.JPG}
+  \caption{Line Chart on Vaccine Most Trusted by Respondents}
+    \label{fig:VaccMostTrusted}
+\end{figure}
+
 The parallel sets allows users to hover over each flow to observe the percentage of respondents within the flow category. Hence users can obtain insights on the distribution of demographic factors and how it varies with the behaviours observed.
 
-From Figure XX below, we observe that there are almost an equal proportion of each gender in the respondents. A large proportion (90%) of respondents always wear masks when outside. Conversely, fewer respondents (72%) always avoid large gatherings and always avoid crowds (45%). We also observe that a large proportion of respondents with pre-existing conditions tend to practice these preventative measures frequently, if not always.
+From Figure XX below, we observe that there are almost an equal proportion of each gender in the respondents. A large proportion (90%) of respondents always wear masks when outside. This is surprising as we would expect the proportion to be close to 100% given that it is a mandatory rule imposed by the government. Conversely, fewer respondents (72%) always avoid large gatherings and always avoid crowds (45%). We also observe that a large proportion of respondents with pre-existing conditions tend to practice these preventative measures frequently, if not always.
 
 \begin{figure}[!h]
   \centering
