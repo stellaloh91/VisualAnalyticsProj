@@ -2066,6 +2066,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="poster.html">Poster</a>
 <a href="application.html">Application &amp; User Guide</a>
 <a href="paper.html">Research Paper</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
@@ -2096,12 +2097,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ul>
 <li><a href="#bar-chart">Bar Chart</a></li>
 <li><a href="#line-chart">Line Chart</a></li>
-<li><a href="#choropleth-map">Choropleth Map</a></li>
 <li><a href="#parallel-sets">Parallel Sets</a></li>
-</ul></li>
-<li><a href="#cluster-analysis">Cluster Analysis</a>
-<ul>
-<li><a href="#latent-class-analysis">Latent Class Analysis</a></li>
+<li><a href="#distribution-analysis">Distribution Analysis</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2114,17 +2111,10 @@ body{
 }
 </style>
 <h2 id="introductory-page">Introductory Page</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<div class="layout-chunk" data-layout="l-body">
-<pre><code>     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  </code></pre>
-</div>
+<p>This introductory page describes the application and provides an overview on application navigation.</p>
+<figure>
+<img src="Image/Intro.JPG" alt="Introductory page" /><figcaption aria-hidden="true">Introductory page</figcaption>
+</figure>
 <h2 id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</h2>
 <h3 id="bar-chart">Bar Chart</h3>
 <p>The bar chart serves as a tool to visualize the proportion of the selected x-variable as well as the breakdown of characteristics in terms of selected y-variable. The data is filtered to exclude respondents which did not specify a response (NULL).</p>
@@ -2140,7 +2130,6 @@ body{
 <li>Include a plot title if desired.</li>
 <li>Select “Confirm Selection” to generate the Line Chart.</li>
 </ol>
-<h3 id="choropleth-map">Choropleth Map</h3>
 <h3 id="parallel-sets">Parallel Sets</h3>
 <p>Parallel Sets allow users to visualize flows from one set of values to another, hence observing the distributions between categories. The horizontal bars represent the possible categories within each dimension and its length is proportionate to the size of the category.Users are able to select up to five dimensions and the select the categories they wish to visualize. Furthermore, the interactive parallel set also allows users to reorder the categories. Users can also mouseover the plot and select either alpha or size to reorder the dimensions by alphabetical order and frequency respectively.</p>
 <figure>
@@ -2152,12 +2141,8 @@ body{
 <li>Select the date range you wish to visualize.</li>
 <li>Click on “Confirm Selection” to apply the selections.</li>
 </ol>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="UserGuide_files/figure-html5/pressure-1.png" width="624" /></p>
-</div>
-<h2 id="cluster-analysis">Cluster Analysis</h2>
-<h3 id="latent-class-analysis">Latent Class Analysis</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h3 id="distribution-analysis">Distribution Analysis</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

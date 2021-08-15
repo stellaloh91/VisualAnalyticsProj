@@ -93,12 +93,11 @@ The interactive application was developed on Shiny, a R package used to build in
 
 Keeping the needs of business users in mind, we have designed the application as such:
 
-EDA tab - Exploratory Data Analysis (EDA) allows business users to explore the data using different variables and aggregation levels, keeping in mind visualization best practices. This tab is further segmented into the various charts:
+Exploratory Data Analysis (EDA)- allows business users to explore the data using different variables and aggregation levels, keeping in mind visualization best practices. This is further segmented into the various charts:
 
 i) Bar Charts
 ii) Line Charts
 iii) Parallel Sets
-iv) Distribution analysis
 
 ## Analytical Techniques
 ### Bar Chart
@@ -115,11 +114,6 @@ The ggplot2 package was used to design the line charts.
 Parallel Sets is a visualization method which allows interactive exploration of categorical data that shows data frequencies instead of the individual data points. The method is based on the axis layout of parallel coordinates, with boxes representing the categories and parallelograms between the axes showing the relations between categories[5]. In the interactive parallel set within the application, the user can visualize the data up to five levels of categorization, which allows them to explore the data using different variables and levels. The tooltip function also gives users information on the number of counts and proportion fulfilling each flow.
 
 The parset package was used to design the parallel sets. Using the infrastructure provided by htmlwidgets, parset allows easy integration of parallel sets into R workflow.
-
-## Distribution Analysis
-The half eye plot was used to visualize distribution. Half Eye plots combine densities with intervals to give a more detailed picture of uncertainty than is available just by looking at intervals.
-
-The ggdist package was used to visualize distributions.
 
 # Description of Product and Findings
 The data used for analysis contained more than 30,000 responses collected over a period from Apr'20 to Jul'21. Date and timestamp of the responses are collected, which allows us to add the time dimension to visualizations to understand how behaviours and perceptions may be changing over time.

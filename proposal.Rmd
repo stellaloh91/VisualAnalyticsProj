@@ -68,7 +68,7 @@ Line charts display information as a series of data points connected by straight
 
 ### Parallel Sets
 
-
+Parallel Sets is a visualization method which allows interactive exploration of categorical data that shows data frequencies instead of the individual data points. The method is based on the axis layout of parallel coordinates, with boxes representing the categories and parallelograms between the axes showing the relations between categories.
 
 
 # Timeline 
