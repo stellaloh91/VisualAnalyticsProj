@@ -99,7 +99,7 @@ ii) Cluster Analysis tab - Segmentation allows business users to identify patter
 
 ## Analytical Techniques
 ### Bar Chart
-Bar charts present categorical data using rectangular bars with lengths proportional to the values that they represent. They are effective in helping users compare individual values to one another[4]. To help users visualize the variability of data, we have also added an option to include 95% confidence error bars into the visualization.
+Bar charts present categorical data using rectangular bars with lengths proportional to the values that they represent. They are effective in helping users compare individual values to one another[4]. 
 
 The ggplot2 package was used to design the bar charts. ggplot2 is a system for creating graphics, based on The Grammar of Graphics. 
 
@@ -116,16 +116,26 @@ The parset package was used to design the parallel sets. Using the infrastructur
 ## Distribution
 
 # Description of Product and Findings
-The data used for analysis contained more than 30,000 responses collected over a period from April 2020 to July 2021. Date and timestamp of the responses are collected, which allows us to add the time dimension to visualizations to understand how behaviours may be changing over time.
+The data used for analysis contained more than 30,000 responses collected over a period from Apr'20 to Jul'21. Date and timestamp of the responses are collected, which allows us to add the time dimension to visualizations to understand how behaviours may be changing over time.
 
-To achieve reliable results, we have prepared the data before performing analysis. We noted several variables in the i14_health section had missing responses, which made up about 10% of the population. We have also created a new variable named "Pre-existing conditions" which specifies if the respondent has any existing health conditions and is derived from the i14_health section responses. For those missing responses, they were categorized as "Not Specified".
-Redundant data were removed to avoid bulky data and to improve the performance of the analysis and exploration. We did not perform any aggregation of data so thay visualizations can be created at a granular level. 
+To achieve reliable results, we have prepared the data before performing analysis. We noted several variables had missing responses and hence were categorized as "Not Specified". We have also created a new variable named "Pre-existing conditions" which specifies if the respondent has any existing health conditions and is derived from the i14_health section responses. For those missing responses, they were categorized as "Not Specified". Redundant data were removed to avoid bulky data and to improve the performance of the analysis and exploration. We did not perform any aggregation of data so that visualizations can be created at a granular level. 
 
 Our assessment shows that the application provides users with an easy to use interface which can potentially provide a wide range of insights, which are illustrated below.
 
-The line chart allows users to hover over each line and observe the proportion of respondents with the response. This allows users to observe how the proportion of respondents with the response has changed over time
+The bar chart allows users to observe the proportion of the selected x-variable, broken down by the characteristics of the selected y-variable. Users can also filter for the typical Covid-19 symptoms and observe how respondents with/ without these symptoms behave.
 
-From Figure XX below, we observe that this survey question was not included in the surveys until Dec'2020. Initially, about 27% of the respondents has moderate to high trust (61%) in the vaccine and this reached a high of 77% in Jul'2021. We observed that most of the respondents have a moderate confidence in the vaccine, compared to 16% who believed strongly. 
+From Figure XX below, we observe that at the time of this survey (Apr'20-Jul'21), most seniors with symptoms have at least gotten 1 dose of the vaccine. Conversely, about 20% of the respondents in the adult category with symptoms have not gotten any dose. 
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=\linewidth]{Image/VaccineDoseAge.JPG}
+  \caption{Bar Chart on Respondents' Vaccination Status by Age Group}
+    \label{fig:VaccineDoseAge}
+\end{figure}
+
+The line chart allows users to hover over each line and observe the proportion of respondents with the response. This allows users to observe how the proportion of respondents with the response has changed over time.
+
+From Figure XX below, we observe that this survey question was not included in the surveys until Dec'20. Initially, about 27% of the respondents has moderate to high trust (61%) in the vaccine and this reached a high of 77% in Jul'21. We observed that most of the respondents have a moderate confidence in the vaccine, compared to 16% who believed strongly. 
 
 \begin{figure}[!h]
   \centering
