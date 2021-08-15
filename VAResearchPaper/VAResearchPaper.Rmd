@@ -113,17 +113,7 @@ Parallel Sets is a visualization method which allows interactive exploration of 
 
 The parset package was used to design the parallel sets. Using the infrastructure provided by htmlwidgets, parset allows easy integration of parallel sets into R workflow.
 
-### Choropleth Map
-Choropleth maps are used to represent statistical data through various shading patterns on predetermined geographic areas. They are effective at utilizing data to represent variability of the desired measurement, across a region[6]. With the use of choropleth maps, the user can explore patterns along geographic lines. In the interactive choropleth map within the application, the user can select the type of data classes and classification method and observe how their choices changes the map results. This allows users to select the option that best suits their needs.
-
-The tmap package was used to design the choropleth maps. It offers a flexible, layer-based approach to create thematic maps and is based on the grammar of graphics[7].
-
-### Latent Class Analysis (LCA)
-Latent Class Analysis (LCA) is a statistical method for identifying unobserved class membership among subjects using categorical and/or continuous observed variables. LCA was selected as the dataset contained both categorical and continuous variables. Furthermore, LCA can be used with data with non-normal distributions that show heteroskedasticity or have heterogeneity of variance[8]. Using LCA, business users will be able to identify clusters based on their demographic and health information. This allows for the design and implementation of targeted initiatives.
-
-Traditionally, model fit indices such as Akaike information Criteria (AIC) or Bayesian information criteria (BIC) have been used to identify the ideal number of latent classes. However, there is no consensus as to which model fit index identifies the best model. In the interactive LCA model within the application, the user can select their desired number of latent classes.
-
-The mclust package was used to design the LCA models. It is a R package for model-based clustering, classification, and density estimation based on finite normal mixture modelling. 
+## Distribution
 
 # Description of Product and Findings
 The data used for analysis contained more than 30,000 responses collected over a period from April 2020 to July 2021. Date and timestamp of the responses are collected, which allows us to add the time dimension to visualizations to understand how behaviours may be changing over time.
@@ -204,7 +194,5 @@ The authors thank Associate Professor, KAM Tin Seong, Singapore Management Unive
 - [3] Shiny - The basic parts of a Shiny app. (2021). Retrieved 11 August 2021, from https://shiny.rstudio.com/articles/basics.html
 - [4] Few, S. (2006). Retrieved 11 August 2021, from https://www.perceptualedge.com/articles/b-eye/encoding_values_in_graph.pdf
 - [5] Kosara, R., Bendix, F., & Hauser, H. (2006). Parallel Sets: interactive exploration and visual analysis of categorical data. IEEE Transactions On Visualization And Computer Graphics, 12(4), 558-568. doi: 10.1109/tvcg.2006.76
-- [6] DeLorenzo, N., & Dugger, A. (2021). Choropleth Map. Retrieved 11 August 2021, from https://www.arcgis.com/apps/MapJournal/index.html?appid=75eff041036d40cf8e70df99641004ca#:~:text=Choropleth%20maps%20are%20popular%20thematic,desired%20measurement%2C%20across%20a%20region
-- [7] Hahn, N. (2021). 2 tmap | Making Maps with R. Retrieved 11 August 2021, from https://bookdown.org/nicohahn/making_maps_with_r5/docs/tmap.html
-- [8] Logan, Jessica & Pentimonti, Jill. (2016). Introduction to Latent Class Analysis for Reading Fluency Research. 10.1007/978-1-4939-2803-3_11
+
 

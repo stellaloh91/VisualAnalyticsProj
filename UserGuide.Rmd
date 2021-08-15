@@ -39,11 +39,18 @@ summary(cars)
 
 ### Bar Chart
 ### Line Chart
+Line charts allow users to visualize trends and patterns of change. Users are able to select which variable they wish to visualize. Furthermore, the interactive line chart allows users to isolate the responses they wish to view. Users can mouseover the plot to see the detailed proportion.
+
+![Line Charts](Image/LineUser.JPG)
+
+1. Select the variable to visualize from the sidebar panel.
+2. Include a plot title if desired.
+3. Select "Confirm Selection" to generate the Line Chart.
 
 ### Choropleth Map
 
 ### Parallel Sets
-Parallel Sets allow users to visualize flows from one set of values to another, hence observing the distributions between categories. The horizontal bars represent the possible categories within each dimension and its length is proportionate to the size of the category. The user is able to select up to five dimensions and the select the categories they wish to visualize. Furthermore, the interactive parallel set also allows users to reorder the categories. Users can also mouseover the plot and select either alpha or size to reorder the dimensions by alphabetical order and frequency respectively.
+Parallel Sets allow users to visualize flows from one set of values to another, hence observing the distributions between categories. The horizontal bars represent the possible categories within each dimension and its length is proportionate to the size of the category.Users are able to select up to five dimensions and the select the categories they wish to visualize. Furthermore, the interactive parallel set also allows users to reorder the categories. Users can also mouseover the plot and select either alpha or size to reorder the dimensions by alphabetical order and frequency respectively.
 
 ![Parallel Sets](Image/PSUser.JPG)
 

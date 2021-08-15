@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.8)  14 AUG 2021 00:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.8)  15 AUG 2021 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -509,37 +509,51 @@ Overfull \hbox (8.40755pt too wide) in paragraph at lines 383--383
 []\secfnt DESCRIPTION OF PROD-UCT AND FIND-
  []
 
-<Image/PSObs.JPG, id=122, 932.283pt x 380.01974pt>
-File: Image/PSObs.JPG Graphic file (type jpg)
-<use Image/PSObs.JPG>
-Package pdftex.def Info: Image/PSObs.JPG  used on input line 421.
-(pdftex.def)             Requested size: 240.0pt x 97.82863pt.
+<Image/TrustVaccine.JPG, id=122, 1137.65025pt x 432.4155pt>
+File: Image/TrustVaccine.JPG Graphic file (type jpg)
+<use Image/TrustVaccine.JPG>
+Package pdftex.def Info: Image/TrustVaccine.JPG  used on input line 420.
+(pdftex.def)             Requested size: 240.0pt x 91.21901pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+<Image/NumberDoses.JPG, id=125, 1144.87724pt x 427.5975pt>
+File: Image/NumberDoses.JPG Graphic file (type jpg)
+<use Image/NumberDoses.JPG>
+Package pdftex.def Info: Image/NumberDoses.JPG  used on input line 436.
+(pdftex.def)             Requested size: 240.0pt x 89.63501pt.
+<Image/VaccMostTrusted.JPG, id=127, 1141.866pt x 425.79076pt>
+File: Image/VaccMostTrusted.JPG Graphic file (type jpg)
+<use Image/VaccMostTrusted.JPG>
+Package pdftex.def Info: Image/VaccMostTrusted.JPG  used on input line 451.
+(pdftex.def)             Requested size: 240.0pt x 89.49016pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.481 \end{enumerate}
-                      [4 <./Image/PSObs.JPG>]
-Overfull \hbox (24.38391pt too wide) in paragraph at lines 505--508
+l.470 
+       [4 <./Image/TrustVaccine.JPG> <./Image/NumberDoses.JPG> <./Image/VaccMos
+tTrusted.JPG>]
+<Image/PSObs.JPG, id=136, 932.283pt x 380.01974pt>
+File: Image/PSObs.JPG Graphic file (type jpg)
+<use Image/PSObs.JPG>
+Package pdftex.def Info: Image/PSObs.JPG  used on input line 473.
+(pdftex.def)             Requested size: 240.0pt x 97.82863pt.
+
+Overfull \hbox (24.38391pt too wide) in paragraph at lines 557--560
 []$\T1/aett/m/n/9 https : / / www . perceptualedge . com / articles / b-[]eye /
  encoding _
  []
 
 
-Overfull \hbox (602.15706pt too wide) in paragraph at lines 513--517
+Overfull \hbox (602.15706pt too wide) in paragraph at lines 565--569
 \T1/aett/m/n/9 arcgis . com / apps / MapJournal / index . html ? appid = 75e^^[
 041036d40cf8e70df99641004ca#$[]:~:text=Choropleth%20maps%20are%20popular%20them
 atic,desired%20measurement%2C%20across%20a%20region 
  []
 
 
-Overfull \hbox (8.95703pt too wide) in paragraph at lines 517--521
+Overfull \hbox (8.95703pt too wide) in paragraph at lines 569--573
 \T1/aett/m/n/9 org / nicohahn / making _ maps _ with _ r5 / docs / tmap . html$
 [] 
  []
@@ -548,10 +562,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.527 \end{document}
-                     [5
-
-] (./VAResearchPaper.aux)
+l.579 \end{document}
+                     [5 <./Image/PSObs.JPG>] (./VAResearchPaper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -559,10 +571,10 @@ Package rerunfilecheck Info: File `VAResearchPaper.out' has not changed.
 (rerunfilecheck)             Checksum: 7E7EF7B3A40449200959670776B0735E;2440.
  ) 
 Here is how much of TeX's memory you used:
- 9125 strings out of 480502
- 133482 string characters out of 5897998
- 447869 words of memory out of 5000000
- 26616 multiletter control sequences out of 15000+600000
+ 9152 strings out of 480502
+ 134113 string characters out of 5897998
+ 448109 words of memory out of 5000000
+ 26637 multiletter control sequences out of 15000+600000
  441227 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  87i,12n,94p,281b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -574,10 +586,10 @@ pe1/public/amsfonts/cm/cmsy9.pfb><c:/Users/Stella/AppData/Roaming/TinyTeX/texmf
 TeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Users/Stella/AppData/Roa
 ming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/Stella/AppDa
 ta/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on VAResearchPaper.pdf (5 pages, 372794 bytes).
+Output written on VAResearchPaper.pdf (5 pages, 611381 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
