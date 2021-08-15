@@ -1,8 +1,8 @@
 ---
 title: A Visual Discovery of Covid-19 Behaviours in Singapore
 author:
-  - name: Alex YEO Chia Guan
-    email: 
+  - name: Andy YEO Chia Guan
+    email: andy.yeo.2020@mitb.smu.edu.sg
     affiliation: Singapore Management University, School of Computing and Information Systems
   - name: ONG Chee Hong
     email: 
@@ -11,7 +11,7 @@ author:
     email: stella.loh@mitb.smu.edu.sg
     affiliation: Singapore Management University, School of Computing and Information Systems
 abstract: |
-  Understanding how are Singaporeans' behaviours change in light of the Covid-19 pandemic is important in furthering the government's efforts to keep the virus under control. Representative questions is one of the ways of gathering information to this question. However, there is a remains a gap between the information collected by various sources and the information actually being used to understand these changing behaviours. 
+  Understanding how Singaporeans' behaviours change in light of the Covid-19 pandemic is important in furthering the government's efforts to keep the virus under control. Representative questions is one of the ways of gathering information to this question. However, there remains a gap between the information collected by various sources and the information actually being used to understand these changing behaviours. 
   This project aims to develop a R Shiny application to visualize the data collected, so as to perform insightful analysis on the data collected from the [YouGov survey](https://github.com/YouGov-Data/covid-19-tracker). The use of R Shiny allows non-technical users to manipulate the visualizations easily, hence allowing business users to be more proactive in generating such insights. Given that the pandemic situation is constantly evolving, we demonstrate the potential of the application through the use of interactive data visualizations to explore and analyze the fast changing data. The analytics and design choices made in the development of the application, initial findings and potential future work are discussed.
 bibliography: sigproc.bib
 csl: acm-sig-proceedings.csl
@@ -118,7 +118,7 @@ The parset package was used to design the parallel sets. Using the infrastructur
 # Description of Product and Findings
 The data used for analysis contained more than 30,000 responses collected over a period from Apr'20 to Jul'21. Date and timestamp of the responses are collected, which allows us to add the time dimension to visualizations to understand how behaviours may be changing over time.
 
-To achieve reliable results, we have prepared the data before performing analysis. We noted several variables had missing responses and hence were categorized as "Not Specified". We have also created a new variable named "Pre-existing conditions" which specifies if the respondent has any existing health conditions and is derived from the i14_health section responses. For those missing responses, they were categorized as "Not Specified". Redundant data were removed to avoid bulky data and to improve the performance of the analysis and exploration. We did not perform any aggregation of data so that visualizations can be created at a granular level. 
+To achieve reliable results, we have prepared the data before performing analysis. We noted several variables had missing responses and these were categorized as "Not Specified". We have also created a new variable named "Pre-existing conditions" which specifies if the respondent has any existing health conditions and is derived from the i14_health section responses. For those missing responses, they were categorized as "Not Specified". We did not perform any aggregation of data so that visualizations can be created at a granular level. 
 
 Our assessment shows that the application provides users with an easy to use interface which can potentially provide a wide range of insights, which are illustrated below.
 
