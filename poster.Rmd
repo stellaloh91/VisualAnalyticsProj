@@ -4,6 +4,13 @@ description: |
   Poster giving an overview of project.
 output: distill::distill_article
 ---
+<style>
+
+body{
+  background-color: #EBEDEF;
+  font-family:helvetica;
+}
+</style>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(fig.retina = 3,

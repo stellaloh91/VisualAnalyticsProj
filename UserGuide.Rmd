@@ -59,9 +59,6 @@ Parallel Sets allow users to visualize flows from one set of values to another, 
 3. Select the date range you wish to visualize.
 4. Click on "Confirm Selection" to apply the selections.
 
-### Distribution Analysis
-
-
 
 
 
