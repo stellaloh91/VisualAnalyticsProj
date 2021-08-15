@@ -1,0 +1,21 @@
+---
+title: "Poster"
+description: |
+  Poster giving an overview of project.
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.retina = 3,
+                      echo = FALSE,
+                      eval = TRUE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+**Our poster can be found here:** [Poster](ProjectPoster.html)
+
+
+
+
+

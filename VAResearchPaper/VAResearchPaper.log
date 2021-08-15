@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.8)  15 AUG 2021 20:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.8)  15 AUG 2021 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -441,8 +441,8 @@ LaTeX Font Warning: Font shape `T1/aett/m/n' undefined
 (Font)              using `T1/cmr/m/n' instead on input line 48.
 
 
-Overfull \hbox (3.24594pt too wide) in paragraph at lines 83--90
-[]\T1/aer/m/n/9 Understanding how per-cep-tions and be-haviours have changed
+Overfull \hbox (3.24594pt too wide) in paragraph at lines 82--89
+[]\T1/aett/m/n/9 Understanding how per-cep-tions and be-haviours have changed
  []
 
 [1{c:/Users/Stella/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pd
@@ -450,51 +450,51 @@ ftex.map}
 
 
 ]
-<Image/StaticLine.JPG, id=83, 401.0985pt x 189.1065pt>
+<Image/StaticLine.JPG, id=84, 401.0985pt x 189.1065pt>
 File: Image/StaticLine.JPG Graphic file (type jpg)
 <use Image/StaticLine.JPG>
-Package pdftex.def Info: Image/StaticLine.JPG  used on input line 170.
+Package pdftex.def Info: Image/StaticLine.JPG  used on input line 166.
 (pdftex.def)             Requested size: 240.0pt x 113.15312pt.
 
 LaTeX Font Warning: Font shape `T1/aer/b/n' undefined
-(Font)              using `T1/aer/m/n' instead on input line 171.
+(Font)              using `T1/aer/m/n' instead on input line 167.
 
-<Image/StaticBar.JPG, id=84, 395.076pt x 165.0165pt>
+<Image/StaticBar.JPG, id=85, 395.076pt x 165.0165pt>
 File: Image/StaticBar.JPG Graphic file (type jpg)
 <use Image/StaticBar.JPG>
-Package pdftex.def Info: Image/StaticBar.JPG  used on input line 187.
+Package pdftex.def Info: Image/StaticBar.JPG  used on input line 183.
 (pdftex.def)             Requested size: 240.0pt x 100.24695pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Font Warning: Font shape `T1/aer/m/it' undefined
-(Font)              using `T1/aer/m/n' instead on input line 199.
+(Font)              using `T1/aer/m/n' instead on input line 195.
 
-<Image/StaticMap.JPG, id=85, 404.712pt x 432.4155pt>
+<Image/StaticMap.JPG, id=86, 404.712pt x 432.4155pt>
 File: Image/StaticMap.JPG Graphic file (type jpg)
 <use Image/StaticMap.JPG>
-Package pdftex.def Info: Image/StaticMap.JPG  used on input line 218.
+Package pdftex.def Info: Image/StaticMap.JPG  used on input line 214.
 (pdftex.def)             Requested size: 240.0pt x 256.42935pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.224 \section{Methodology}\label{methodology}}
-                                                [2 <./Image/StaticLine.JPG> <./
-Image/StaticBar.JPG> <./Image/StaticMap.JPG>]
-Overfull \hbox (3.0598pt too wide) in paragraph at lines 226--236
+
+Overfull \hbox (3.0598pt too wide) in paragraph at lines 222--234
 \T1/aer/m/it/9 sen-ta-tive sur-vey con-ducted by a part-ner-ship be-tween []You
 Gov
  []
 
-
-Overfull \hbox (2.16904pt too wide) in paragraph at lines 258--262
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.234 
+       [2 <./Image/StaticLine.JPG> <./Image/StaticBar.JPG> <./Image/StaticMap.J
+PG>]
+Overfull \hbox (2.16904pt too wide) in paragraph at lines 257--261
 \T1/aer/m/it/9 used to sep-a-rate the vari-able into two sep-a-rate columns,
  []
 
 
-Overfull \hbox (8.40755pt too wide) in paragraph at lines 342--342
+Overfull \hbox (8.40755pt too wide) in paragraph at lines 352--352
 []\secfnt DESCRIPTION OF PROD-UCT AND FIND-
  []
 
@@ -502,46 +502,54 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.362 T
-       he bar chart allows users to observe the proportion of the selected [3]
-<Image/VaccineDoseAge.JPG, id=118, 1143.67274pt x 392.667pt>
+l.368 
+       [3]
+<Image/VaccineDoseAge.JPG, id=121, 1143.67274pt x 392.667pt>
 File: Image/VaccineDoseAge.JPG Graphic file (type jpg)
 <use Image/VaccineDoseAge.JPG>
-Package pdftex.def Info: Image/VaccineDoseAge.JPG  used on input line 374.
+Package pdftex.def Info: Image/VaccineDoseAge.JPG  used on input line 388.
 (pdftex.def)             Requested size: 240.0pt x 82.39659pt.
-<Image/TrustVaccine.JPG, id=119, 1137.65025pt x 432.4155pt>
+<Image/TrustVaccine.JPG, id=122, 1137.65025pt x 432.4155pt>
 File: Image/TrustVaccine.JPG Graphic file (type jpg)
 <use Image/TrustVaccine.JPG>
-Package pdftex.def Info: Image/TrustVaccine.JPG  used on input line 393.
+Package pdftex.def Info: Image/TrustVaccine.JPG  used on input line 407.
 (pdftex.def)             Requested size: 240.0pt x 91.21901pt.
-<Image/NumberDoses.JPG, id=122, 1144.87724pt x 427.5975pt>
+<Image/NumberDoses.JPG, id=125, 1144.87724pt x 427.5975pt>
 File: Image/NumberDoses.JPG Graphic file (type jpg)
 <use Image/NumberDoses.JPG>
-Package pdftex.def Info: Image/NumberDoses.JPG  used on input line 409.
+Package pdftex.def Info: Image/NumberDoses.JPG  used on input line 424.
 (pdftex.def)             Requested size: 240.0pt x 89.63501pt.
+<Image/VaccMostTrusted.JPG, id=127, 1141.866pt x 425.79076pt>
+File: Image/VaccMostTrusted.JPG Graphic file (type jpg)
+<use Image/VaccMostTrusted.JPG>
+Package pdftex.def Info: Image/VaccMostTrusted.JPG  used on input line 439.
+(pdftex.def)             Requested size: 240.0pt x 89.49016pt.
+<Image/PSObs.JPG, id=128, 932.283pt x 380.01974pt>
+File: Image/PSObs.JPG Graphic file (type jpg)
+<use Image/PSObs.JPG>
+Package pdftex.def Info: Image/PSObs.JPG  used on input line 461.
+(pdftex.def)             Requested size: 240.0pt x 97.82863pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Image/VaccMostTrusted.JPG, id=124, 1141.866pt x 425.79076pt>
-File: Image/VaccMostTrusted.JPG Graphic file (type jpg)
-<use Image/VaccMostTrusted.JPG>
-Package pdftex.def Info: Image/VaccMostTrusted.JPG  used on input line 424.
-(pdftex.def)             Requested size: 240.0pt x 89.49016pt.
-<Image/PSObs.JPG, id=125, 932.283pt x 380.01974pt>
-File: Image/PSObs.JPG Graphic file (type jpg)
-<use Image/PSObs.JPG>
-Package pdftex.def Info: Image/PSObs.JPG  used on input line 446.
-(pdftex.def)             Requested size: 240.0pt x 97.82863pt.
+<Image/PSObs1.JPG, id=129, 1145.4795pt x 459.51675pt>
+File: Image/PSObs1.JPG Graphic file (type jpg)
+<use Image/PSObs1.JPG>
+Package pdftex.def Info: Image/PSObs1.JPG  used on input line 475.
+(pdftex.def)             Requested size: 240.0pt x 96.277pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.465   U
-         ser guide provided made it easier for non-technical users to use the [
-4 <./Image/VaccineDoseAge.JPG> <./Image/TrustVaccine.JPG> <./Image/NumberDoses.
-JPG> <./Image/VaccMostTrusted.JPG> <./Image/PSObs.JPG>]
-Overfull \hbox (24.38391pt too wide) in paragraph at lines 530--533
-[]$\T1/aett/m/n/9 https : / / www . perceptualedge . com / articles / b-[]eye /
+l.481 \section{Discussion}\label{discussion}}
+                                              [4 <./Image/VaccineDoseAge.JPG> <
+./Image/TrustVaccine.JPG> <./Image/NumberDoses.JPG> <./Image/VaccMostTrusted.JP
+G>]
+Overfull \hbox (24.38391pt too wide) in paragraph at lines 558--561
+[]$\T1/aer/m/it/9 https : / / www . perceptualedge . com / articles / b-[]eye /
  encoding _
  []
 
@@ -549,19 +557,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.540 \end{document}
-                     [5] (./VAResearchPaper.aux)
+l.568 \end{document}
+                     [5 <./Image/PSObs.JPG> <./Image/PSObs1.JPG>] (./VAResearch
+Paper.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `VAResearchPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 1059319040B6D65F948DDDC9620A014C;2199.
+(rerunfilecheck)             Checksum: 52C30A2C99ED4478D89242BDFEDF2C64;2247.
  ) 
 Here is how much of TeX's memory you used:
- 9157 strings out of 480502
- 134228 string characters out of 5897998
- 448115 words of memory out of 5000000
- 26642 multiletter control sequences out of 15000+600000
+ 9168 strings out of 480502
+ 134417 string characters out of 5897998
+ 448313 words of memory out of 5000000
+ 26649 multiletter control sequences out of 15000+600000
  441227 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  87i,12n,94p,281b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -573,10 +582,10 @@ pe1/public/amsfonts/cm/cmsy9.pfb><c:/Users/Stella/AppData/Roaming/TinyTeX/texmf
 TeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Users/Stella/AppData/Roa
 ming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/Stella/AppDa
 ta/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on VAResearchPaper.pdf (5 pages, 678349 bytes).
+Output written on VAResearchPaper.pdf (5 pages, 783645 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 58 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 283 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

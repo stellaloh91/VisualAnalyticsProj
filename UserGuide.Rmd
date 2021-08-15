@@ -27,13 +27,9 @@ knitr::opts_chunk$set(fig.retina = 3,
 
 ## Introductory Page
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This introductory page describes the application and provides an overview on application navigation.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
+![Introductory page](Image/Intro.JPG)
 
 ## Exploratory Data Analysis (EDA)
 
@@ -53,8 +49,6 @@ Line charts allow users to visualize trends and patterns of change. Users are ab
 2. Include a plot title if desired.
 3. Select "Confirm Selection" to generate the Line Chart.
 
-### Choropleth Map
-
 ### Parallel Sets
 Parallel Sets allow users to visualize flows from one set of values to another, hence observing the distributions between categories. The horizontal bars represent the possible categories within each dimension and its length is proportionate to the size of the category.Users are able to select up to five dimensions and the select the categories they wish to visualize. Furthermore, the interactive parallel set also allows users to reorder the categories. Users can also mouseover the plot and select either alpha or size to reorder the dimensions by alphabetical order and frequency respectively.
 
@@ -65,14 +59,7 @@ Parallel Sets allow users to visualize flows from one set of values to another, 
 3. Select the date range you wish to visualize.
 4. Click on "Confirm Selection" to apply the selections.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-
-## Cluster Analysis
-
-### Latent Class Analysis
+### Distribution Analysis
 
 
 

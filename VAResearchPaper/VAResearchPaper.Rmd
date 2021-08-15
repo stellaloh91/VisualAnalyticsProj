@@ -5,7 +5,7 @@ author:
     email: andy.yeo.2020@mitb.smu.edu.sg
     affiliation: Singapore Management University, School of Computing and Information Systems
   - name: ONG Chee Hong
-    email: 
+    email: chong.2020@mitb.smu.edu.sg
     affiliation: Singapore Management University, School of Computing and Information Systems
   - name: Stella LOH Yun Jia
     email: stella.loh@mitb.smu.edu.sg
@@ -21,11 +21,11 @@ output: rticles::acm_article
 # Introduction 
 With the onset of the Covid-19 pandemic since 2019, nations have been scrambling to gather as much data as possible on this novel virus. In a bid to contain the spread, nations have implemented various measures, with most of these approaches centered on the role of an individual to practice preventive behaviours[1]. These measures range from being mandatory (requirement to wear masks once leaving the house) to those which are highly encouraged (proper handwashing). With the implementation of these approaches, daily behaviours as we know it have slowly evolved.
 
-Understanding how perceptions and behaviours have changed in critical in determining the success of Covid-19 measures. Afterall, it is not enforcement that will determine if measures introduced by the government succeed or fail, but the behaviour of the people. A common approach is to collect data from representative surveys, Most of these survey fieldwork and analysis are performed independently for various studies and tend to be on a smaller scale.
+Understanding how perceptions and behaviours have changed in critical in determining the success of Covid-19 measures. Afterall, it is not enforcement that will determine if measures introduced by the government succeed or fail, but the behaviour of the people. A common approach is to collect data from representative surveys. Most of these survey fieldwork and analysis are performed independently for various studies and tend to be on a smaller scale.
 
 Despite the effort and expense on such research initiatives, the real world practice of using these survey data tends to be confined to the particular study and bulk of the data collected is left untapped for insights. The charts presented in the analysis are typically confined to static charts which provide summarized information to the user. They tend to be highly aggregated with the granular details either not presented or presented in supplementary charts.
 
-We have developed an interactive tool to help users better understand the change in Covid-19 behaviours on a more granular level. With this tool we aim to provide users such as a government Covid-19 taskforce practitioner, with an improved way to gain deeper understanding of the changing behaviours using the most effective visualizations and segmentation techniques.
+We have developed an interactive tool to help users better understand the change in Covid-19 behaviours and perceptions on a more granular level. With this tool we aim to provide users such as a government Covid-19 taskforce practitioner, with an improved way to gain deeper understanding of the changing behaviours and perceptions using the most effective visualization techniques.
 
 This paper documents the development effort to design and implement the interactive tool for supporting the analysis and visualization of a government Covid-19 taskforce practitioner. The paper consists of seven sections and starts off with an introduction of the paper. This is followed by an overview of the motivation and objectives of the paper and a review of past works. Section 4 explains the data used and methodology employed, including the analytical methods used to visualize and analyze data. Section 5 provides an overview of the interface design, functionality and findings after applying the application to a practical use case. Section 6 then summarizes some observations obtained from end users. Lastly, Section 7 concludes by highlighting the future direction of the research.
 
@@ -41,7 +41,7 @@ This research and development is motivated by the difficulty faced by non-techni
 # Literature Review of previous works
 There has been work performed on the visualization of the same dataset collected. These visualizations are static in nature. Some limitations of static charts are that users are unable to manipulate the view of the charts. Furthermore, unless there are adequate labels included, users may not be able to derive the exact value of the variable simply by viewing the chart. 
 
-An example of this is seen in Figure 1 where we are able to see an overall trend of higher proportion of respondents wearing a mask outside of their homes. However, the user is unable to obtain the exact percentage for each period. Additionally, users only get one view from this static chart- an overall aggregated view. They are unable to change the view to view the response by gender, for example. Moreover, there is poor use of color as colors representing "Not at all" and "Rarely" responses are similar and hence when overlapped, makes it hard to read the chart. Lastly, the x-axis labels are not presented horizontally for easy reading.
+An example of this is seen in Figure 1 where we are able to see an overall trend of higher proportion of respondents wearing a mask outside of their homes. However, the user is unable to obtain the exact percentage for each period. Moreover, there is poor use of color as colors representing "Not at all" and "Rarely" responses are similar and hence when overlapped, makes it hard to read the chart. Lastly, the x-axis labels are not presented horizontally for easy reading.
 
 \begin{figure}[!h]
   \centering
@@ -75,14 +75,14 @@ There are certain geospatial variables in the survey data collected. This allows
 \end{figure}
 
 # Methodology
-The dataset used in this project is gathered through a representative survey conducted by a partnership between [YouGov and Institute of Global Health Innovation (IGHI) at Imperial College London](https://github.com/YouGov-Data/covid-19-tracker). The questions in the survey are designed to cover on testing, symptoms and ability and willingness to self-isolate if needed. It also looks at behaviours and extent of compliance with the 20 common preventative measures. Contextual information such as gender, age, region, household size, household children, health conditions, employment status and date of survey response have also been collected.
+The dataset used in this project is gathered through a representative survey conducted by a partnership between [YouGov and Institute of Global Health Innovation (IGHI) at Imperial College London](https://github.com/YouGov-Data/covid-19-tracker). The questions in the survey are designed to cover on testing, symptoms and ability and willingness to self-isolate if needed. It also looks at behaviours and extent of compliance with the 20 common preventative measures. Contextual information such as gender, age, region, household size, household children, health conditions, employment status and date of survey response have also been collected. The survey was conducted across various countries. For the purposes of this project, we will be focusing only on Singapore.
 
-As the dataset consists of different data types (categorical, continuous and geospatial), we have developed the application to allow non-technical users to effectively explore the data set by enabling them to interact with the application to select the view and data to focus on. With the interactive features, users can select the variables to view and the aggregation level to view them at.
+As the dataset consists of different data types (categorical and continuous), we have developed the application to allow non-technical users to effectively explore the data set by enabling them to interact with the application to select the view and data to focus on. With the interactive features, users can select the variables to view and the aggregation level to view them at.
 
 ## Data Preparation
 The raw data collected was provided in CSV format. The following steps were taken to prepare the data:
 
-i) We noted there were certain variables in the dataset for which most responses were blank. We first read the CSV file into R, taking care to include only the first 78 columns as the columns after had minimal responses and thus were dropped.
+i) We first read the CSV file into R, taking note of the relevant variables to be included in analysis. We noted there were certain variables in the dataset for responses were not collected. Most of these variables were of categorical type and hence we have imputed NULL responses with "Not Specified".
 
 ii) The region variable had 2 components in the response, with region and town separated by a "-". dplyr was used to separate the variable into two separate columns, named region and town.
 
@@ -93,9 +93,12 @@ The interactive application was developed on Shiny, a R package used to build in
 
 Keeping the needs of business users in mind, we have designed the application as such:
 
-i) EDA tab - Exploratory Data Analysis (EDA) allows business users to explore the data using different variables and aggregation levels, keeping in mind visualization best practices.
+EDA tab - Exploratory Data Analysis (EDA) allows business users to explore the data using different variables and aggregation levels, keeping in mind visualization best practices. This tab is further segmented into the various charts:
 
-ii) Cluster Analysis tab - Segmentation allows business users to identify patterns in the data, which can guide future actions such as implementing targeted policies to influence behaviours based on the cluster profile.
+i) Bar Charts
+ii) Line Charts
+iii) Parallel Sets
+iv) Distribution analysis
 
 ## Analytical Techniques
 ### Bar Chart
@@ -113,10 +116,13 @@ Parallel Sets is a visualization method which allows interactive exploration of 
 
 The parset package was used to design the parallel sets. Using the infrastructure provided by htmlwidgets, parset allows easy integration of parallel sets into R workflow.
 
-## Distribution
+## Distribution Analysis
+The half eye plot was used to visualize distribution. Half Eye plots combine densities with intervals to give a more detailed picture of uncertainty than is available just by looking at intervals.
+
+The ggdist package was used to visualize distributions.
 
 # Description of Product and Findings
-The data used for analysis contained more than 30,000 responses collected over a period from Apr'20 to Jul'21. Date and timestamp of the responses are collected, which allows us to add the time dimension to visualizations to understand how behaviours may be changing over time.
+The data used for analysis contained more than 30,000 responses collected over a period from Apr'20 to Jul'21. Date and timestamp of the responses are collected, which allows us to add the time dimension to visualizations to understand how behaviours and perceptions may be changing over time.
 
 To achieve reliable results, we have prepared the data before performing analysis. We noted several variables had missing responses and these were categorized as "Not Specified". We have also created a new variable named "Pre-existing conditions" which specifies if the respondent has any existing health conditions and is derived from the i14_health section responses. For those missing responses, they were categorized as "Not Specified". We did not perform any aggregation of data so that visualizations can be created at a granular level. 
 
@@ -124,18 +130,18 @@ Our assessment shows that the application provides users with an easy to use int
 
 The bar chart allows users to observe the proportion of the selected x-variable, broken down by the characteristics of the selected y-variable. Users can also filter for the typical Covid-19 symptoms and observe how respondents with/ without these symptoms behave.
 
-From Figure XX below, we observe that at the time of this survey (Apr'20-Jul'21), most seniors with symptoms have at least gotten 1 dose of the vaccine. Conversely, about 20% of the respondents in the adult category with symptoms have not gotten any dose. 
+From Figure 4 below, the application reveals that at the time of this survey (Apr'20-Jul'21), most seniors with symptoms have at least gotten 1 dose of the vaccine. Conversely, about 20% of the respondents in the adult category with symptoms have not gotten any dose. This is in line with our understanding of vaccine availability as the seniors were given priority over the younger generation. Users can use this chart to continue monitoring the vaccine uptake across the age groups.
 
 \begin{figure}[!h]
   \centering
     \includegraphics[width=\linewidth]{Image/VaccineDoseAge.JPG}
-  \caption{Bar Chart on Respondents' Vaccination Status by Age Group}
+  \caption{Bar Chart on Respondents' (with symptoms) Vaccination Status by Age Group}
     \label{fig:VaccineDoseAge}
 \end{figure}
 
 The line chart allows users to hover over each line and observe the proportion of respondents with the response. This allows users to observe how the proportion of respondents with the response has changed over time.
 
-From Figure XX below, we observe that this survey question was not included in the surveys until Dec'20. Initially, about 27% of the respondents has moderate to high trust (61%) in the vaccine and this reached a high of 77% in Jul'21. We observed that most of the respondents have a moderate confidence in the vaccine, compared to 16% who believed strongly. 
+From Figure 5 below, we observe that this survey question was not included in the surveys until Dec'20. Initially, about 27% of the respondents has moderate to high trust in the vaccine and this reached a high of 77% in Jul'21. We observed that most of the respondents have a moderate confidence (61%) in the vaccine, compared to 16% who believed strongly. 
 
 \begin{figure}[!h]
   \centering
@@ -144,7 +150,7 @@ From Figure XX below, we observe that this survey question was not included in t
     \label{fig:TrustVaccine}
 \end{figure}
 
-From Figure XX below, we also observe that vaccinations started becoming available to the population starting from [Feb'2021](https://www.gov.sg/article/what-you-should-know-about-the-covid-19-vaccine) and up to 55% of respondents have received 2 doses of vaccine as at Jul'2021, and 29% have received 1 dose. This is in line with the [country vaccination rates](https://www.straitstimes.com/singapore/politics/54-in-spore-have-received-2-doses-of-covid-19-mrna-vaccine-vaccination-rate-up-1). Proportion of respondents who have not started vaccination are also showing a steep decline since Mar'2021.
+We also observe that vaccinations started becoming available to the population starting from [Feb'21](https://www.gov.sg/article/what-you-should-know-about-the-covid-19-vaccine) and up to 55% of respondents have received 2 doses of vaccine as at Jul'21, and 29% have received 1 dose (Figure 6). This is in line with the [country vaccination rates](https://www.straitstimes.com/singapore/politics/54-in-spore-have-received-2-doses-of-covid-19-mrna-vaccine-vaccination-rate-up-1). Proportion of respondents who have not started vaccination are also showing a steep decline since Mar'21.
 
 \begin{figure}[!h]
   \centering
@@ -153,7 +159,7 @@ From Figure XX below, we also observe that vaccinations started becoming availab
     \label{fig:NumberDoses}
 \end{figure}
 
-Another interesting observation noted was the preference for Pfizer vaccines initially in Mar'2021. However, this confidence soon started declining and in Jul'2021, there does not seem to be a significant difference in confidence among the vaccines. The decline may have coincided with [reports of a man's death after taking the said vaccine](https://www.straitstimes.com/singapore/health/man-who-died-a-day-after-first-covid-19-jab-suffered-from-heart-attack-death-not).
+Another interesting observation noted was the preference for Pfizer vaccines initially in Mar'21. However, this confidence soon started declining and in Jul'21, there does not seem to be a significant difference in confidence among the vaccines. The decline may have coincided with [reports of a man's death after taking the said vaccine](https://www.straitstimes.com/singapore/health/man-who-died-a-day-after-first-covid-19-jab-suffered-from-heart-attack-death-not).
 
 \begin{figure}[!h]
   \centering
@@ -164,13 +170,22 @@ Another interesting observation noted was the preference for Pfizer vaccines ini
 
 The parallel sets allows users to hover over each flow to observe the percentage of respondents within the flow category. Hence users can obtain insights on the distribution of demographic factors and how it varies with the behaviours observed.
 
-From Figure XX below, we observe that there are almost an equal proportion of each gender in the respondents. A large proportion (90%) of respondents always wear masks when outside. This is surprising as we would expect the proportion to be close to 100% given that it is a mandatory rule imposed by the government. Conversely, fewer respondents (72%) always avoid large gatherings and always avoid crowds (45%). We also observe that a large proportion of respondents with pre-existing conditions tend to practice these preventative measures frequently, if not always.
+From Figure 8 below, we observe that there are almost an equal proportion of each gender in the respondents. A large proportion (90%) of respondents always wear masks when outside. This is surprising as we would expect the proportion to be close to 100% given that it is a mandatory rule imposed by the government. Conversely, fewer respondents (72%) always avoid large gatherings and always avoid crowds (45%). We also observe that a large proportion of respondents with pre-existing conditions tend to practice these preventative measures frequently, if not always.
 
 \begin{figure}[!h]
   \centering
     \includegraphics[width=\linewidth]{Image/PSObs.JPG}
-  \caption{Interactive Parallel Sets}
+  \caption{Interactive Parallel Sets showing selected levels}
     \label{fig:PSObs}
+\end{figure}
+
+From the parallel set, we also observe about 28% of respondents have pre-existing conditions but only 4% have pre-existing conditions and have been vaccinated (1 or 2 doses) (Figure 9). This is an area to be improved on and the authorities can look into initiatives to encourage this group to achieve higher vaccination rates given that they may belong to the higher risk segment.
+
+\begin{figure}[!h]
+  \centering
+    \includegraphics[width=\linewidth]{Image/PSObs1.JPG}
+  \caption{Parallel Sets indicating flow of pre-existing conditions to vaccination status}
+    \label{fig:PSObs1}
 \end{figure}
 
 # Discussion
@@ -180,7 +195,7 @@ i) Users found the ability to interact with the visualizations useful. Users can
 
 ii) User guide provided made it easier for non-technical users to use the application.
 
-iii) Organization of the application into EDA and Clustering Analysis tabs, and grouping the relevant visualizations into each tab allowed users to navigate the application easily, as opposed to other visualization software like Tableau where these visualizations tend to be organized in sheets.
+iii) Organization of the application by grouping the relevant visualizations allowed users to navigate the application easily, as opposed to other visualization software like Tableau where these visualizations tend to be organized in sheets.
 
 iv) An area of improvement is to include an option for the user to compare one chart view against another so as to make comparisons easier.
 

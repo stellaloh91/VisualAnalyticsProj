@@ -66,17 +66,9 @@ Line charts display information as a series of data points connected by straight
 
 ![Example 2: Example of line charts](Image/linecharts.JPG)
 
-### Chloropeth Map
+### Parallel Sets
 
-We are provided with the location of respondents by region. With this information, we can visualize how the responses vary by regions within Singapore, using a choropleth map.
 
-![Example 3: Example of choropleth map](Image/map.JPG)
-
-### Latent Class Analysis (LCA)
-
-Latent Class Analysis (LCA) is a statistical method for identifying unmeasured class membership among subjects using categorical and/or continuous observed variables. Segmenting the population by the identified variables can allow end users to better understand the respondents and direct targeted initiatives at each segment to influence their behaviours. As there are many variables in the dataset, we have identified key variables to segment the population on.
-
-![Example 4: Example of Latent Class Analysis visualization](Image/LCA.JPG)
 
 
 # Timeline 
