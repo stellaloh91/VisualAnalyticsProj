@@ -1,5 +1,5 @@
 name: "A Visual Exploration of Covid-19 behaviours in Singapore"
-title: "A Visual Exploration of Covid-19 behaviours in Singapore"
+title: "Covid-19 behaviours in Singapore"
 description: |
   This website details our analysis on the changing Covid-19 behaviours in Singapore and is based on data collected by YouGov and the Institute of Global Health Innovation (IGHI) at Imperial College London.
 output_dir: "_site"

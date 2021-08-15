@@ -1,0 +1,67 @@
+---
+title: "Application User Guide"
+description: |
+  A manual to guide users on application usage.
+output: 
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    self_contained: false
+---
+<style>
+
+body{
+  background-color: #EBEDEF;
+  font-family:helvetica;
+}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.retina = 3,
+                      echo = FALSE,
+                      eval = TRUE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+## Introductory Page
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Exploratory Data Analysis (EDA)
+
+### Bar Chart
+### Line Chart
+### Choropleth Map
+
+### Parallel Sets
+Parallel Sets allow users to visualize flows from one set of values to another, hence observing the distributions between categories. The horizontal bars represent the possible categories within each dimension and its length is proportionate to the size of the category. The user is able to select up to five dimensions and the select the categories they wish to visualize. Furthermore, the interactive parallel set also allows users to reorder the categories. Users can also mouseover the plot and select either alpha or size to reorder the dimensions by alphabetical order and frequency respectively.
+
+![Parallel Sets](Image/PSUser.JPG)
+
+1. Select number of levels you wish to visualize.
+2. Select the variables you wish to visualize.
+3. Select the date range you wish to visualize.
+4. Click on "Confirm Selection" to apply the selections.
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+
+## Cluster Analysis
+
+### Latent Class Analysis
+
+
+
+
+
+
