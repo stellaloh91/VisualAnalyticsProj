@@ -86,4 +86,10 @@ The parallel sets shows the distribution between different categories at each le
 knitr::write_bib(c('knitr','rmarkdown','posterdown','pagedown'), 'packages.bib')
 ```
 
+```{r echo = FALSE, eval=FALSE}
 
+library(pagedown)
+
+pagedown::chrome_print("_site/ProjectPoster.html")
+
+```

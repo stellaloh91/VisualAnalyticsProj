@@ -20,7 +20,7 @@ knitr::opts_chunk$set(fig.retina = 3,
                       warning = FALSE)
 ```
 
-**Our poster can be found here:** [Poster](ProjectPoster.html)
+**Our poster can be found here:** [Poster](ProjectPoster.pdf)
 
 
 

@@ -20,7 +20,7 @@ knitr::opts_chunk$set(fig.retina = 3,
                       warning = FALSE)
 ```
 
-**Our Application can be found here:** [Application](www.rstudio.com)<br>
+**Our Application can be found here:** [Application](https://stellalohyj.shinyapps.io/Group_7_Covid_Project/)<br>
 **Our Application's User Guide can be found here:** [User Guide](UserGuide.html)
 
 
